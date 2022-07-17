@@ -1,85 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Dmitry Semenov CV</title>
     <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
-   <img src="venom.jpg" alt="Тут должна быть моя фотка"
-                class="avatar"
-    />
-    
-<h1>Дмитрий Семенов</h1> 
-<h3><em>Немного о себе:</em></h3>
-<p><em>Я учусь программировать на <strong>JavaScript</strong> </em></p>
-<p>Люблю технологии, играть в компьютерные игры, общаться с инетресными людьми</p></td>
+    <div class="container">
+        <div class="info">
+            <img src="venom.jpg" alt="Тут должна быть моя фотка" class="avatar" />
+            <div class="info-text">
+                <h1>Дмитрий Семенов</h1>
+                <h3>Немного о себе:</h3>
+                <p>Я учусь программировать на <strong>JavaScript</strong></p>
+                <p>Люблю технологии, играть в компьютерные игры, общаться с интересными людьми</p>
 
-<hr>
+                <h4> Мои социальные сети</h4>
 
-<h2> Мои социальные сети</h2>
-<ul type="square">
-    <li><a href="https://vk.ru" target="_blank"> В контакте</a> </li>
-    <li><a href="https://ya.ru">Яндекс</a></li>
-</ul>
+                <a href="https://vk.ru" target="_blank"> В контакте</a>
+                |
+                <a href="https://ya.ru">Яндекс</a>
+            </div>
+        </div>
+        <div class="card bg-yellow">
+            <h2> Мои хобби</h2>
+            <ol class="list">
+                <li>Играть в компьютерные игры</li>
+                <li>Учиться чему-то новому</li>
+                <li>Заниматься спортом</li>
+            </ol>
+        </div>
 
-<hr>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <!-- <thead>
+                <tr>
+                    <th>Компания</th>
+                    <th>Должность</th>
+                    <th>Период работы</th>
+                </tr>
+            </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Таврида Электрик</td>
+                        <td>Инженер по качеству</td>
+                        <td>2013 - 2021</td>
+                    </tr>
 
-<h2> Мои хобби</h2>
-<ol>
-    <li>Играть в компьютерные игры</li>
-    <li>Учиться чему-то новому</li>
-    <li>Заниматься спортом</li>
-</ol>
+                    <tr>
+                        <td>Ритейл Софт</td>
+                        <td>QA Инженер</td>
+                        <td>2021 - 2022</td>
+                    </tr>
 
-<hr>
+                    <tr>
+                        <td>Сбертех</td>
+                        <td>QA Инженер</td>
+                        <td>2022 - сейчас</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
 
-<h2>Опыт работы</h2>
-<table>
-    <thead>  <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Период работы</th>
-    </tr></thead>
-    <tbody> <tr>
-        <td>Ритейл Софт</td>
-        <td>QA Инженер</td>
-        <td>2021-2022</td>
-    </tr>
+        <div class="card bg-red">
 
-    <tr>
-        <td>Сбертех</td>
-        <td>QA Инженер</td>
-        <td>2022</td>
-    </tr></tbody>
-    <tfoot></tfoot>
-  
-   
-  
-</table>
+            <h2>Хотите в Нарнию?</h2>
 
-<hr>
+            <ul class="link-list">
+                <li><a href="narniya.html" target="_blank">Вот вам ссылка</a>
 
-<h2>Хотите в Нарнию?</h2>
-<a href="narniya.html" target="_blank">Вот вам ссылка</a>
+                </li>
 
-<hr color="red">
+                <li> <a href="https://www.yaplakal.com/" target="_blank">Не пикабушник</a>
 
-<h2>Связаться со мной</h2>
-<form action="/">
-    <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="Введите ваше имя">
-<br>
-    <label for="email">Ваш Email:</label>
-    <input type="email" id="email" placeholder="Введите ваш Email">
-    <br>
-    <label for="message">Ваше сообщение:</label>
-    <br>
-    <textarea name="" id="message" cols="30" rows="5" placeholder="Введите ваше сообщение"></textarea>
-    <br>
-    <input type="submit" value="Связаться">
-</form>
-<br>
-This is my first page! 2022
+                </li>
+            </ul>
+
+        </div>
+        <hr color="red">
+
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите ваш Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="message" cols="30" rows="5" placeholder="Введите ваше сообщение"></textarea>
+                </div>
+                <input class="btn" type="submit" value="Связаться">
+                <div class="position">
+                    <div class="box"></div>
+                </div>
+        </div>
+        </form>
+
+        This is my first page! 2022
+    </div>
+    </div>
+
 </body>
+
 </html>
